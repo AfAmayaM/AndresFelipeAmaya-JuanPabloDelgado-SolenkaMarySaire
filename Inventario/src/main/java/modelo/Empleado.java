@@ -1,8 +1,10 @@
-package org.example.modelo;
+package modelo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import lombok.*;
+
+import java.io.Serializable;
 
 @Entity
 @Getter
@@ -11,7 +13,7 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Empleado {
+public class Empleado implements Serializable {
 
     @Column(nullable = false, length = 255)
     private String id_empleado;

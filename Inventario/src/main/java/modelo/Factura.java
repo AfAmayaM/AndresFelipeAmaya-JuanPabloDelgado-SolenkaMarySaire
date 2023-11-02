@@ -1,8 +1,9 @@
-package org.example.modelo;
+package modelo;
 
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
@@ -12,7 +13,7 @@ import java.util.Date;
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Factura {
+public class Factura implements Serializable {
 
 
     @Id

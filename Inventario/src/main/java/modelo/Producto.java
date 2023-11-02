@@ -1,5 +1,5 @@
-package org.example.modelo;
-
+package modelo;
+import modelo.Categoria;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -32,8 +32,8 @@ public class Producto implements Serializable {
     private int stock;
 
 
-   /* @Column(nullable = false)
-    private Categoria categoria;*/
+    @Column(nullable = false)
+    private Categoria categoria;
 
 
    /* @ManyToOne

@@ -1,4 +1,4 @@
-package org.example.modelo;
+package modelo;
 
 public enum Tipo_Factura {
     FISICA,
