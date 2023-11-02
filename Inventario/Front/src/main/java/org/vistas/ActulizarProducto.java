@@ -1,7 +1,6 @@
 package org.vistas;
 
-public class Login extends javax.swing.JFrame {
-
+public class ActulizarProducto extends javax.swing.JFrame {
     /**
      * Creates new form actualizarC
      */
@@ -17,10 +16,13 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        Contraseña = new javax.swing.JTextField();
-        Correo = new javax.swing.JTextField();
-        Ingresar = new javax.swing.JLabel();
-        Registrarce = new javax.swing.JLabel();
+        PrecioMaximo = new javax.swing.JTextField();
+        ConfimarcionContraseña = new javax.swing.JTextField();
+        Categoria = new javax.swing.JTextField();
+        PrecioMinimo = new javax.swing.JTextField();
+        nombreUsuario = new javax.swing.JLabel();
+        fecha = new javax.swing.JLabel();
+        Actualizar = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -28,45 +30,72 @@ public class Login extends javax.swing.JFrame {
 
         jLayeredPane1.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
 
-        Contraseña.setBackground(new java.awt.Color(255, 255, 255));
-        Contraseña.setForeground(new java.awt.Color(0, 0, 0));
-        Contraseña.setBorder(null);
-        Contraseña.addActionListener(new java.awt.event.ActionListener() {
+        PrecioMaximo.setBackground(new java.awt.Color(255, 255, 255));
+        PrecioMaximo.setForeground(new java.awt.Color(0, 0, 0));
+        PrecioMaximo.setBorder(null);
+        PrecioMaximo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ContraseñaActionPerformed(evt);
+                PrecioMaximoActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(Contraseña);
-        Contraseña.setBounds(430, 380, 360, 20);
+        jLayeredPane1.add(PrecioMaximo);
+        PrecioMaximo.setBounds(260, 300, 190, 20);
 
-        Correo.setBackground(new java.awt.Color(255, 255, 255));
-        Correo.setForeground(new java.awt.Color(0, 0, 0));
-        Correo.setBorder(null);
-        Correo.addActionListener(new java.awt.event.ActionListener() {
+        ConfimarcionContraseña.setBackground(new java.awt.Color(255, 255, 255));
+        ConfimarcionContraseña.setForeground(new java.awt.Color(0, 0, 0));
+        ConfimarcionContraseña.setBorder(null);
+        ConfimarcionContraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CorreoActionPerformed(evt);
+                ConfimarcionContraseñaActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(Correo);
-        Correo.setBounds(430, 280, 360, 20);
+        jLayeredPane1.add(ConfimarcionContraseña);
+        ConfimarcionContraseña.setBounds(760, 500, 250, 20);
 
-        Ingresar.addMouseListener(new java.awt.event.MouseAdapter() {
+        Categoria.setBackground(new java.awt.Color(255, 255, 255));
+        Categoria.setForeground(new java.awt.Color(0, 0, 0));
+        Categoria.setBorder(null);
+        Categoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CategoriaActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(Categoria);
+        Categoria.setBounds(260, 210, 180, 20);
+
+        PrecioMinimo.setBackground(new java.awt.Color(255, 255, 255));
+        PrecioMinimo.setForeground(new java.awt.Color(0, 0, 0));
+        PrecioMinimo.setBorder(null);
+        PrecioMinimo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PrecioMinimoActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(PrecioMinimo);
+        PrecioMinimo.setBounds(700, 210, 190, 20);
+
+        nombreUsuario.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        nombreUsuario.setForeground(new java.awt.Color(163, 58, 175));
+        nombreUsuario.setText("Nombre usuario");
+        jLayeredPane1.add(nombreUsuario);
+        nombreUsuario.setBounds(1150, 10, 100, 19);
+
+        fecha.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        fecha.setForeground(new java.awt.Color(163, 58, 175));
+        fecha.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        fecha.setText("Fecha-hora");
+        jLayeredPane1.add(fecha);
+        fecha.setBounds(1080, 30, 140, 19);
+
+        Actualizar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                IngresarMouseClicked(evt);
+                ActualizarMouseClicked(evt);
             }
         });
-        jLayeredPane1.add(Ingresar);
-        Ingresar.setBounds(420, 440, 370, 40);
+        jLayeredPane1.add(Actualizar);
+        Actualizar.setBounds(700, 310, 110, 30);
 
-        Registrarce.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                RegistrarceMouseClicked(evt);
-            }
-        });
-        jLayeredPane1.add(Registrarce);
-        Registrarce.setBounds(590, 490, 60, 10);
-
-        fondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\USUARIO\\OneDrive\\Desktop\\software 3\\AndresFelipeAmaya-JuanPabloDelgado-SolenkaMarySaire\\Inventario\\Imagenes\\Log.jpg")); // NOI18N
+        fondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\USUARIO\\OneDrive\\Desktop\\software 3\\AndresFelipeAmaya-JuanPabloDelgado-SolenkaMarySaire\\Inventario\\Imagenes\\Modificar producto.jpg")); // NOI18N
         fondo.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         jLayeredPane1.add(fondo);
         fondo.setBounds(0, 0, 1260, 640);
@@ -87,19 +116,23 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>
 
-    private void CorreoActionPerformed(java.awt.event.ActionEvent evt) {
+    private void CategoriaActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void IngresarMouseClicked(java.awt.event.MouseEvent evt) {
+    private void PrecioMinimoActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void RegistrarceMouseClicked(java.awt.event.MouseEvent evt) {
+    private void ActualizarMouseClicked(java.awt.event.MouseEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void ContraseñaActionPerformed(java.awt.event.ActionEvent evt) {
+    private void PrecioMaximoActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void ConfimarcionContraseñaActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
@@ -133,26 +166,27 @@ public class Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new ActulizarProducto().setVisible(true);
             }
         });
     }
 
 
     // Variables declaration - do not modify
-    private javax.swing.JTextField Contraseña;
-    private javax.swing.JTextField Correo;
-    private javax.swing.JLabel Ingresar;
-    private javax.swing.JLabel Registrarce;
+    private javax.swing.JLabel Actualizar;
+    private javax.swing.JTextField Categoria;
+    private javax.swing.JTextField ConfimarcionContraseña;
+    private javax.swing.JTextField PrecioMaximo;
+    private javax.swing.JTextField PrecioMinimo;
+    private javax.swing.JLabel fecha;
     private javax.swing.JLabel fondo;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JLabel nombreUsuario;
     // End of variables declaration
-    public Login() {
+    public ActulizarProducto() {
         initComponents();
 
         jLayeredPane1.setBounds(0, 0,getWidth(), getHeight());
 
     }
-
 }
-
