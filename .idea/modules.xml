@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AndresFelipeAmaya-JuanPabloDelgado-SolenkaMarySaire.iml" filepath="$PROJECT_DIR$/.idea/AndresFelipeAmaya-JuanPabloDelgado-SolenkaMarySaire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inventario/Front/Front.iml" filepath="$PROJECT_DIR$/Inventario/Front/Front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inventario/Inventario.iml" filepath="$PROJECT_DIR$/Inventario/Inventario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inventario/persistencia/persistencia.iml" filepath="$PROJECT_DIR$/Inventario/persistencia/persistencia.iml" />
+    </modules>
+  </component>
+</project>
